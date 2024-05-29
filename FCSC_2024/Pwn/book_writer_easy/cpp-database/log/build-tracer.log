@@ -1,0 +1,537 @@
+[T 16:26:03 47447] CodeQL CLI version 2.17.0
+[T 16:26:03 47447] Initializing tracer.
+[T 16:26:03 47447] Initializing tags.
+[T 16:26:03 47447] ID set to 000000000000B957_0000000000000001 (parent root)
+[T 16:26:03 47447] Initializing tracer.
+[T 16:26:03 47447] Initializing tags.
+[T 16:26:03 47447] ID set to 000000000000B957_0000000000000002 (parent root)
+[T 16:26:03 47447] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 16:26:03 47447] ==== Candidate to intercept: /opt/reverse/codeql/tools/linux64/runner-linux (canonical: /opt/reverse/codeql/tools/linux64/runner-linux) ====
+[T 16:26:03 47447] Executing the following tracer actions:
+[T 16:26:03 47447] Tracer actions:
+[T 16:26:03 47447] pre_invocations(0)
+[T 16:26:03 47447] post_invocations(0)
+[T 16:26:03 47447] trace_languages(1): [cpp]
+[T 16:26:03 47447] Initializing tracer.
+[T 16:26:03 47447] Initializing tags.
+[T 16:26:03 47447] ID set to 000000000000B957_0000000000000003 (parent 000000000000B957_0000000000000002)
+[T 16:26:03 47447] ==== Candidate to intercept: gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47447] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47447] Executing the following tracer actions:
+[T 16:26:03 47447] Tracer actions:
+[T 16:26:03 47447] pre_invocations(0)
+[T 16:26:03 47447] post_invocations(1)
+[T 16:26:03 47447] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, book_writer.c]
+[T 16:26:03 47447] trace_languages(1): [cpp]
+[T 16:26:03 47451] Initializing tracer.
+[T 16:26:03 47451] Initializing tags.
+[T 16:26:03 47451] ID set to 000000000000B95B_0000000000000001 (parent 000000000000B957_0000000000000003)
+[T 16:26:03 47451] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47451] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47451] Executing the following tracer actions:
+[T 16:26:03 47451] Tracer actions:
+[T 16:26:03 47451] pre_invocations(0)
+[T 16:26:03 47451] post_invocations(1)
+[T 16:26:03 47451] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -quiet, book_writer.c, -quiet, -dumpdir, a-, -dumpbase, book_writer.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -o, /tmp/ccVGm8wV.s]
+[T 16:26:03 47451] trace_languages(1): [cpp]
+[T 16:26:03 47453] Attempting to switch stdout/stderr to 4...
+[T 16:26:03 47453] Initializing tracer.
+[T 16:26:03 47453] Initializing tags.
+[T 16:26:03 47453] ID set to 000000000000B95D_0000000000000001 (parent 000000000000B95B_0000000000000001)
+[E 18:26:03 47453] CodeQL C/C++ Extractor 2.17.0
+[E 18:26:03 47453] Current directory: /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy
+[E 18:26:03 47453] Command: /opt/reverse/codeql/cpp/tools/linux64/extractor --mimic /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet book_writer.c -quiet -dumpdir a- -dumpbase book_writer.c -dumpbase-ext .c -mtune=generic -march=x86-64 -o /tmp/ccVGm8wV.s
+Warning: Could not open file '/home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/compiler_mimic_cache/1104fb629b65'
+Warning: Could not open file '/home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/compiler_mimic_cache/641698ac89e0'
+[T 16:26:03 47454] Initializing tracer.
+[T 16:26:03 47454] Initializing tags.
+[T 16:26:03 47454] ID set to 000000000000B95E_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47454] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47454] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47454] Executing the following tracer actions:
+[T 16:26:03 47454] Tracer actions:
+[T 16:26:03 47454] pre_invocations(0)
+[T 16:26:03 47454] post_invocations(1)
+[T 16:26:03 47454] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, --version]
+[T 16:26:03 47454] trace_languages(1): [cpp]
+[T 16:26:03 47456] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47456] Initializing tracer.
+[T 16:26:03 47456] Initializing tags.
+[T 16:26:03 47456] ID set to 000000000000B960_0000000000000001 (parent 000000000000B95E_0000000000000001)
+[E 18:26:03 47456] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47456] Extractor exited successfully
+[T 16:26:03 47454] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47457] Initializing tracer.
+[T 16:26:03 47457] Initializing tags.
+[T 16:26:03 47457] ID set to 000000000000B961_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47457] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47457] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47457] Executing the following tracer actions:
+[T 16:26:03 47457] Tracer actions:
+[T 16:26:03 47457] pre_invocations(0)
+[T 16:26:03 47457] post_invocations(1)
+[T 16:26:03 47457] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, --help]
+[T 16:26:03 47457] trace_languages(1): [cpp]
+[T 16:26:03 47459] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47459] Initializing tracer.
+[T 16:26:03 47459] Initializing tags.
+[T 16:26:03 47459] ID set to 000000000000B963_0000000000000001 (parent 000000000000B961_0000000000000001)
+[E 18:26:03 47459] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47459] Extractor exited successfully
+[T 16:26:03 47457] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47460] Initializing tracer.
+[T 16:26:03 47460] Initializing tags.
+[T 16:26:03 47460] ID set to 000000000000B964_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47460] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47460] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47460] Executing the following tracer actions:
+[T 16:26:03 47460] Tracer actions:
+[T 16:26:03 47460] pre_invocations(0)
+[T 16:26:03 47460] post_invocations(1)
+[T 16:26:03 47460] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -version, --help]
+[T 16:26:03 47460] trace_languages(1): [cpp]
+[T 16:26:03 47462] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47462] Initializing tracer.
+[T 16:26:03 47462] Initializing tags.
+[T 16:26:03 47462] ID set to 000000000000B966_0000000000000001 (parent 000000000000B964_0000000000000001)
+[E 18:26:03 47462] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47462] Extractor exited successfully
+[T 16:26:03 47460] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47463] Initializing tracer.
+[T 16:26:03 47463] Initializing tags.
+[T 16:26:03 47463] ID set to 000000000000B967_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47463] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47463] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47463] Executing the following tracer actions:
+[T 16:26:03 47463] Tracer actions:
+[T 16:26:03 47463] pre_invocations(0)
+[T 16:26:03 47463] post_invocations(1)
+[T 16:26:03 47463] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -nostdinc, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_2_47453_218945.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_1_47453_218924.c]
+[T 16:26:03 47463] trace_languages(1): [cpp]
+[T 16:26:03 47465] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47465] Initializing tracer.
+[T 16:26:03 47465] Initializing tags.
+[T 16:26:03 47465] ID set to 000000000000B969_0000000000000001 (parent 000000000000B967_0000000000000001)
+[E 18:26:03 47465] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47465] Extractor exited successfully
+[T 16:26:03 47463] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47466] Initializing tracer.
+[T 16:26:03 47466] Initializing tags.
+[T 16:26:03 47466] ID set to 000000000000B96A_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47466] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47466] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47466] Executing the following tracer actions:
+[T 16:26:03 47466] Tracer actions:
+[T 16:26:03 47466] pre_invocations(0)
+[T 16:26:03 47466] post_invocations(1)
+[T 16:26:03 47466] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -nostdinc, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_4_47453_242174.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_3_47453_242148.c]
+[T 16:26:03 47466] trace_languages(1): [cpp]
+[T 16:26:03 47468] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47468] Initializing tracer.
+[T 16:26:03 47468] Initializing tags.
+[T 16:26:03 47468] ID set to 000000000000B96C_0000000000000001 (parent 000000000000B96A_0000000000000001)
+[E 18:26:03 47468] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47468] Extractor exited successfully
+[T 16:26:03 47466] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 18:26:03 47453] Checking whether C compilation already happened.
+[E 18:26:03 47453] Checking for tag c-compilation-happened
+[E 18:26:03 47453] Checking CODEQL_TRACER_DB_ID 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Unlocking DB
+[E 18:26:03 47453] Unlocked DB
+[E 18:26:03 47453] Looks like C compilation didn't already happen.
+[E 18:26:03 47453] Checking whether C compilation has been attempted.
+[E 18:26:03 47453] Checking for tag c-compilation-attempted
+[E 18:26:03 47453] Checking CODEQL_TRACER_DB_ID 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Unlocking DB
+[E 18:26:03 47453] Unlocked DB
+[E 18:26:03 47453] Marking C compilation as attempted.
+[E 18:26:03 47453] Setting tag c-compilation-attempted
+[E 18:26:03 47453] Starting from CODEQL_TRACER_DB_ID 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Set tag for 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Set tag for 000000000000B957_0000000000000003
+[E 18:26:03 47453] Set tag for 000000000000B957_0000000000000002
+[E 18:26:03 47453] Set tag for root
+[E 18:26:03 47453] Unlocking DB
+[E 18:26:03 47453] Unlocked DB
+[E 18:26:03 47453] Warning[extractor-c++]: In canonicalise_path: realpath failed
+Warning: Could not open file '/home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/compiler_mimic_cache/bb5905c3afa5'
+[T 16:26:03 47469] Initializing tracer.
+[T 16:26:03 47469] Initializing tags.
+[T 16:26:03 47469] ID set to 000000000000B96D_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47469] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47469] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47469] Executing the following tracer actions:
+[T 16:26:03 47469] Tracer actions:
+[T 16:26:03 47469] pre_invocations(0)
+[T 16:26:03 47469] post_invocations(1)
+[T 16:26:03 47469] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -v, -fsyntax-only, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_6_47453_260445]
+[T 16:26:03 47469] trace_languages(1): [cpp]
+[T 16:26:03 47471] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47471] Initializing tracer.
+[T 16:26:03 47471] Initializing tags.
+[T 16:26:03 47471] ID set to 000000000000B96F_0000000000000001 (parent 000000000000B96D_0000000000000001)
+[E 18:26:03 47471] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47471] Extractor exited successfully
+[T 16:26:03 47469] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47472] Initializing tracer.
+[T 16:26:03 47472] Initializing tags.
+[T 16:26:03 47472] ID set to 000000000000B970_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47472] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47472] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47472] Executing the following tracer actions:
+[T 16:26:03 47472] Tracer actions:
+[T 16:26:03 47472] pre_invocations(0)
+[T 16:26:03 47472] post_invocations(1)
+[T 16:26:03 47472] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -E, -dM, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_7_47453_282100]
+[T 16:26:03 47472] trace_languages(1): [cpp]
+[T 16:26:03 47474] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47474] Initializing tracer.
+[T 16:26:03 47474] Initializing tags.
+[T 16:26:03 47474] ID set to 000000000000B972_0000000000000001 (parent 000000000000B970_0000000000000001)
+[E 18:26:03 47474] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47474] Extractor exited successfully
+[T 16:26:03 47472] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47475] Initializing tracer.
+[T 16:26:03 47475] Initializing tags.
+[T 16:26:03 47475] ID set to 000000000000B973_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47475] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47475] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47475] Executing the following tracer actions:
+[T 16:26:03 47475] Tracer actions:
+[T 16:26:03 47475] pre_invocations(0)
+[T 16:26:03 47475] post_invocations(1)
+[T 16:26:03 47475] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_9_47453_312104.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_8_47453_312045.c]
+[T 16:26:03 47475] trace_languages(1): [cpp]
+[T 16:26:03 47477] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47477] Initializing tracer.
+[T 16:26:03 47477] Initializing tags.
+[T 16:26:03 47477] ID set to 000000000000B975_0000000000000001 (parent 000000000000B973_0000000000000001)
+[E 18:26:03 47477] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47477] Extractor exited successfully
+[T 16:26:03 47475] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47478] Initializing tracer.
+[T 16:26:03 47478] Initializing tags.
+[T 16:26:03 47478] ID set to 000000000000B976_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47478] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47478] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47478] Executing the following tracer actions:
+[T 16:26:03 47478] Tracer actions:
+[T 16:26:03 47478] pre_invocations(0)
+[T 16:26:03 47478] post_invocations(1)
+[T 16:26:03 47478] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_11_47453_340822.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_10_47453_340779.c]
+[T 16:26:03 47478] trace_languages(1): [cpp]
+[T 16:26:03 47480] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47480] Initializing tracer.
+[T 16:26:03 47480] Initializing tags.
+[T 16:26:03 47480] ID set to 000000000000B978_0000000000000001 (parent 000000000000B976_0000000000000001)
+[E 18:26:03 47480] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47480] Extractor exited successfully
+[T 16:26:03 47478] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47481] Initializing tracer.
+[T 16:26:03 47481] Initializing tags.
+[T 16:26:03 47481] ID set to 000000000000B979_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47481] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47481] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47481] Executing the following tracer actions:
+[T 16:26:03 47481] Tracer actions:
+[T 16:26:03 47481] pre_invocations(0)
+[T 16:26:03 47481] post_invocations(1)
+[T 16:26:03 47481] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_13_47453_369781.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_12_47453_369731.c]
+[T 16:26:03 47481] trace_languages(1): [cpp]
+[T 16:26:03 47483] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47483] Initializing tracer.
+[T 16:26:03 47483] Initializing tags.
+[T 16:26:03 47483] ID set to 000000000000B97B_0000000000000001 (parent 000000000000B979_0000000000000001)
+[E 18:26:03 47483] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47483] Extractor exited successfully
+[T 16:26:03 47481] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47484] Initializing tracer.
+[T 16:26:03 47484] Initializing tags.
+[T 16:26:03 47484] ID set to 000000000000B97C_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47484] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47484] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47484] Executing the following tracer actions:
+[T 16:26:03 47484] Tracer actions:
+[T 16:26:03 47484] pre_invocations(0)
+[T 16:26:03 47484] post_invocations(1)
+[T 16:26:03 47484] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_15_47453_411845.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_14_47453_411793.c]
+[T 16:26:03 47484] trace_languages(1): [cpp]
+[T 16:26:03 47486] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47486] Initializing tracer.
+[T 16:26:03 47486] Initializing tags.
+[T 16:26:03 47486] ID set to 000000000000B97E_0000000000000001 (parent 000000000000B97C_0000000000000001)
+[E 18:26:03 47486] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47486] Extractor exited successfully
+[T 16:26:03 47484] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47487] Initializing tracer.
+[T 16:26:03 47487] Initializing tags.
+[T 16:26:03 47487] ID set to 000000000000B97F_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47487] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47487] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47487] Executing the following tracer actions:
+[T 16:26:03 47487] Tracer actions:
+[T 16:26:03 47487] pre_invocations(0)
+[T 16:26:03 47487] post_invocations(1)
+[T 16:26:03 47487] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_17_47453_440427.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_16_47453_440384.c]
+[T 16:26:03 47487] trace_languages(1): [cpp]
+[T 16:26:03 47489] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47489] Initializing tracer.
+[T 16:26:03 47489] Initializing tags.
+[T 16:26:03 47489] ID set to 000000000000B981_0000000000000001 (parent 000000000000B97F_0000000000000001)
+[E 18:26:03 47489] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47489] Extractor exited successfully
+[T 16:26:03 47487] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47490] Initializing tracer.
+[T 16:26:03 47490] Initializing tags.
+[T 16:26:03 47490] ID set to 000000000000B982_0000000000000001 (parent 000000000000B95D_0000000000000001)
+[T 16:26:03 47490] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47490] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47490] Executing the following tracer actions:
+[T 16:26:03 47490] Tracer actions:
+[T 16:26:03 47490] pre_invocations(0)
+[T 16:26:03 47490] post_invocations(1)
+[T 16:26:03 47490] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -mtune=generic, -march=x86-64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_19_47453_481388.o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_18_47453_481349.c]
+[T 16:26:03 47490] trace_languages(1): [cpp]
+[T 16:26:03 47492] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47492] Initializing tracer.
+[T 16:26:03 47492] Initializing tags.
+[T 16:26:03 47492] ID set to 000000000000B984_0000000000000001 (parent 000000000000B982_0000000000000001)
+[E 18:26:03 47492] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47492] Extractor exited successfully
+[T 16:26:03 47490] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 18:26:03 47453] Processed command line: /opt/reverse/codeql/cpp/tools/linux64/extractor --trapfolder /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/trap/cpp --src_archive /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/src --object_filename /tmp/ccVGm8wV.s -w --error_limit 1000 --disable_system_macros --variadic_macros --incognito --gcc --gnu_version 130201 --target linux_x86_64 '-D__DBL_MIN_EXP__=(-1021)' -D__UINT_LEAST16_MAX__=0xffff -D__FLT16_HAS_QUIET_NAN__=1 -D__ATOMIC_ACQUIRE=2 -D__FLT128_MAX_10_EXP__=4932 -D__FLT_MIN__=1.17549435082228750796873653722224568e-38F -D__GCC_IEC_559_COMPLEX=2 '-D__UINT_LEAST8_TYPE__=unsigned char' -D__SIZEOF_FLOAT80__=16 -D__BFLT16_DENORM_MIN__=9.18354961579912115600575419704879436e-41BF16 '-D__INTMAX_C(c)=c ## L' -D__CHAR_BIT__=8 -D__UINT8_MAX__=0xff -D__SCHAR_WIDTH__=8 -D__WINT_MAX__=0xffffffffU '-D__FLT32_MIN_EXP__=(-125)' '-D__BFLT16_NORM_MAX__=3.38953138925153547590470800371487867e+38BF16' '-D__BFLT16_MIN_10_EXP__=(-37)' -D__ORDER_LITTLE_ENDIAN__=1234 -D__WCHAR_MAX__=0x7fffffff -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1 -D__GCC_ATOMIC_CHAR_LOCK_FREE=2 -D__GCC_IEC_559=2 -D__FLT32X_DECIMAL_DIG__=17 -D__FLT_EVAL_METHOD__=0 -D__FLT64_DECIMAL_DIG__=17 -D__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__UINT_FAST64_MAX__=0xffffffffffffffffUL -D__SIG_ATOMIC_TYPE__=int '-D__DBL_MIN_10_EXP__=(-307)' -D__FINITE_MATH_ONLY__=0 -D__FLT32X_MAX_EXP__=1024 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1 -D__FLT32_HAS_DENORM__=1 -D__UINT_FAST8_MAX__=0xff -D__FLT32_MAX_10_EXP__=38 -D__DEC64_MAX_EXP__=385 '-D__INT8_C(c)=c' -D__INT_LEAST8_WIDTH__=8 -D__UINT_LEAST64_MAX__=0xffffffffffffffffUL -D__SHRT_MAX__=0x7fff '-D__LDBL_MAX__=1.18973149535723176502126385303097021e+4932L' -D__FLT64X_MAX_10_EXP__=4932 -D__BFLT16_MAX_10_EXP__=38 -D__BFLT16_MAX_EXP__=128 -D__LDBL_IS_IEC_60559__=1 -D__FLT64X_HAS_QUIET_NAN__=1 -D__UINT_LEAST8_MAX__=0xff -D__GCC_ATOMIC_BOOL_LOCK_FREE=2 -D__FLT128_DENORM_MIN__=6.47517511943802511092443895822764655e-4966F128 '-D__UINTMAX_TYPE__=long unsigned int' -D__BFLT16_DECIMAL_DIG__=4 -D__linux=1 -D__DEC32_EPSILON__=1E-6DF -D__FLT_EVAL_METHOD_TS_18661_3__=0 -D__UINT32_MAX__=0xffffffffU '-D__DBL_DENORM_MIN__=((double)4.94065645841246544176568792868221372e-324L)' '-D__FLT128_MIN_EXP__=(-16381)' -D__WINT_MIN__=0U '-D__FLT128_MIN_10_EXP__=(-4931)' -D__FLT32X_IS_IEC_60559__=1 -D__INT_LEAST16_WIDTH__=16 -D__SCHAR_MAX__=0x7f -D__FLT128_MANT_DIG__=113 '-D__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)' '-D__INT64_C(c)=c ## L' -D__SSP_STRONG__=3 -D__GCC_ATOMIC_POINTER_LOCK_FREE=2 -D__ATOMIC_SEQ_CST=5 -D__unix=1 -D__INT_LEAST64_MAX__=0x7fffffffffffffffL -D__FLT32X_MANT_DIG__=53 -D__FLT64X_EPSILON__=1.08420217248550443400745280086994171e-19F64x '-D__DEC64_MIN_EXP__=(-382)' -D__DBL_DIG__=15 -D__FLT_EPSILON__=1.19209289550781250000000000000000000e-7F -D__SHRT_WIDTH__=16 -D__FLT32_IS_IEC_60559__=1 -D__LDBL_MIN__=3.36210314311209350626267781732175260e-4932L -D__STDC_UTF_16__=1 -D__DBL_IS_IEC_60559__=1 -D__DEC32_MAX__=9.999999E96DF -D__FLT64X_DENORM_MIN__=3.64519953188247460252840593361941982e-4951F64x -D__FLT32X_HAS_INFINITY__=1 -D__unix__=1 -D__INT_WIDTH__=32 -D__STDC_IEC_559__=1 -D__STDC_ISO_10646__=201706L -D__DECIMAL_DIG__=21 -D__STDC_IEC_559_COMPLEX__=1 -D__FLT64_EPSILON__=2.22044604925031308084726333618164062e-16F64 -D__gnu_linux__=1 -D__FLT128_IS_IEC_60559__=1 '-D__FLT64X_MIN_10_EXP__=(-4931)' -D__LDBL_HAS_QUIET_NAN__=1 '-D__FLT16_MIN_EXP__=(-13)' -D__FLT64_MANT_DIG__=53 -D__FLT64X_MANT_DIG__=64 -D__BFLT16_DIG__=2 -D__pie__=2 -D__MMX__=1 -D__FLT_HAS_DENORM__=1 -D__SIZEOF_LONG_DOUBLE__=16 -D__BIGGEST_ALIGNMENT__=16 -D__FLT64_MAX_10_EXP__=308 -D__BFLT16_IS_IEC_60559__=0 -D__FLT16_MAX_10_EXP__=4 '-D__DBL_MAX__=((double)1.79769313486231570814527423731704357e+308L)' -D__INT_FAST32_MAX__=0x7fffffffffffffffL -D__DBL_HAS_INFINITY__=1 -D__INT64_MAX__=0x7fffffffffffffffL -D__SIZEOF_FLOAT__=4 -D__HAVE_SPECULATION_SAFE_VALUE=1 '-D__DEC32_MIN_EXP__=(-94)' -D__INTPTR_WIDTH__=64 -D__UINT_LEAST32_MAX__=0xffffffffU -D__FLT32X_HAS_DENORM__=1 '-D__INT_FAST16_TYPE__=long int' -D__MMX_WITH_SSE__=1 -D__LDBL_HAS_DENORM__=1 -D__SEG_GS=1 -D__BFLT16_EPSILON__=7.81250000000000000000000000000000000e-3BF16 -D__FLT128_HAS_INFINITY__=1 -D__DEC32_MIN__=1E-95DF -D__DBL_MAX_EXP__=1024 -D__WCHAR_WIDTH__=32 '-D__FLT32_MAX__=3.40282346638528859811704183484516925e+38F32' -D__DEC128_EPSILON__=1E-33DL -D__FLT16_DECIMAL_DIG__=5 -D__SSE2_MATH__=1 -D__ATOMIC_HLE_RELEASE=131072 -D__PTRDIFF_MAX__=0x7fffffffffffffffL -D__amd64=1 -D__ATOMIC_HLE_ACQUIRE=65536 -D__LONG_LONG_MAX__=0x7fffffffffffffffLL -D__SIZEOF_SIZE_T__=8 -D__BFLT16_HAS_INFINITY__=1 '-D__FLT64X_MIN_EXP__=(-16381)' -D__SIZEOF_WINT_T__=4 -D__LONG_LONG_WIDTH__=64 -D__FLT32_MAX_EXP__=128 -D__GXX_ABI_VERSION=1018 '-D__FLT_MIN_EXP__=(-125)' -D__GCC_HAVE_DWARF2_CFI_ASM=1 -D__INT16_MAX__=0x7fff -D__x86_64=1 '-D__INT_FAST64_TYPE__=long int' '-D__BFLT16_MAX__=3.38953138925153547590470800371487867e+38BF16' -D__BFLT16_HAS_DENORM__=1 -D__FLT64_DENORM_MIN__=4.94065645841246544176568792868221372e-324F64 -D__FLT16_DENORM_MIN__=5.96046447753906250000000000000000000e-8F16 -D__FLT128_EPSILON__=1.92592994438723585305597794258492732e-34F128 '-D__FLT64X_NORM_MAX__=1.18973149535723176502126385303097021e+4932F64x' -D__SIZEOF_POINTER__=8 '-D__SIZE_TYPE__=long unsigned int' -D__LP64__=1 -D__DBL_HAS_QUIET_NAN__=1 -D__FLT32X_EPSILON__=2.22044604925031308084726333618164062e-16F32x -D__LDBL_MAX_EXP__=16384 -D__DECIMAL_BID_FORMAT__=1 '-D__FLT64_MIN_EXP__=(-1021)' '-D__FLT64_MIN_10_EXP__=(-307)' '-D__FLT16_MIN_10_EXP__=(-4)' -D__FLT64X_DECIMAL_DIG__=21 -D__DEC128_MIN__=1E-6143DL -D__REGISTER_PREFIX__= -D__UINT16_MAX__=0xffff -D__DBL_HAS_DENORM__=1 -D__FLT32_MIN__=1.17549435082228750796873653722224568e-38F32 '-D__UINT8_TYPE__=unsigned char' -D__FLT_DIG__=6 -D__NO_INLINE__=1 -D__DEC_EVAL_METHOD__=2 -D__FLT_MANT_DIG__=24 -D__LDBL_DECIMAL_DIG__=21 '-D__UINT64_C(c)=c ## UL' -D_STDC_PREDEF_H=1 -D__INT_LEAST32_MAX__=0x7fffffff -D__GCC_ATOMIC_INT_LOCK_FREE=2 -D__FLT128_MAX_EXP__=16384 -D__FLT32_MANT_DIG__=24 -D__FLOAT_WORD_ORDER__=__ORDER_LITTLE_ENDIAN__ '-D__FLT32X_MIN_EXP__=(-1021)' -D__STDC_IEC_60559_COMPLEX__=201404L -D__BFLT16_MIN__=1.17549435082228750796873653722224568e-38BF16 -D__FLT128_HAS_DENORM__=1 -D__FLT32_DECIMAL_DIG__=9 -D__FLT128_DIG__=33 '-D__INT32_C(c)=c' -D__DEC64_EPSILON__=1E-15DD -D__ORDER_PDP_ENDIAN__=3412 '-D__DEC128_MIN_EXP__=(-6142)' -D__DEC128_MAX__=9.999999999999999999999999999999999E6144DL '-D__INT_FAST32_TYPE__=long int' '-D__UINT_LEAST16_TYPE__=short unsigned int' -D__DEC128_MAX_EXP__=6145 -Dunix=1 -D__UINT64_MAX__=0xffffffffffffffffUL -D__FLT_IS_IEC_60559__=1 '-D__GNUC_WIDE_EXECUTION_CHARSET_NAME="UTF-32LE"' -D__FLT64X_DIG__=18 '-D__INT8_TYPE__=signed char' -D__ELF__=1 -D__GCC_ASM_FLAG_OUTPUTS__=1 '-D__UINT32_TYPE__=unsigned int' -D__BFLT16_HAS_QUIET_NAN__=1 -D__FLT_RADIX__=2 '-D__INT_LEAST16_TYPE__=short int' -D__LDBL_EPSILON__=1.08420217248550443400745280086994171e-19L '-D__UINTMAX_C(c)=c ## UL' -D__FLT16_DIG__=3 -D__SSE_MATH__=1 -D__k8=1 -D__FLT32X_MIN__=2.22507385850720138309023271733240406e-308F32x -D__SIG_ATOMIC_MAX__=0x7fffffff -D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__USER_LABEL_PREFIX__= -D__STDC_IEC_60559_BFP__=201404L -D__SIZEOF_PTRDIFF_T__=8 -D__FLT64X_HAS_INFINITY__=1 -D__FLT32_HAS_INFINITY__=1 -D__SIZEOF_LONG__=8 -D__LDBL_DIG__=18 -D__FLT64_IS_IEC_60559__=1 -D__x86_64__=1 -D__FLT16_IS_IEC_60559__=1 -D__FLT16_MAX_EXP__=16 -D__DEC32_SUBNORMAL_MIN__=0.000001E-95DF -D__INT_FAST16_MAX__=0x7fffffffffffffffL -D__GCC_CONSTRUCTIVE_SIZE=64 -D__FLT64_DIG__=15 -D__UINT_FAST32_MAX__=0xffffffffffffffffUL '-D__UINT_LEAST64_TYPE__=long unsigned int' -D__FLT16_EPSILON__=9.76562500000000000000000000000000000e-4F16 -D__FLT_HAS_QUIET_NAN__=1 -D__FLT_MAX_10_EXP__=38 -D__LONG_MAX__=0x7fffffffffffffffL -D__FLT64X_HAS_DENORM__=1 -D__DEC128_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143DL -D__FLT_HAS_INFINITY__=1 '-D__GNUC_EXECUTION_CHARSET_NAME="UTF-8"' '-D__UINT_FAST16_TYPE__=long unsigned int' -D__DEC64_MAX__=9.999999999999999E384DD -D__INT_FAST32_WIDTH__=64 -D__PRAGMA_REDEFINE_EXTNAME=1 -D__SIZE_WIDTH__=64 -D__SEG_FS=1 -D__INT_LEAST16_MAX__=0x7fff '-D__FLT16_NORM_MAX__=6.55040000000000000000000000000000000e+4F16' -D__DEC64_MANT_DIG__=16 -D__FLT32_DENORM_MIN__=1.40129846432481707092372958328991613e-45F32 -D__SIG_ATOMIC_WIDTH__=32 '-D__INT_LEAST64_TYPE__=long int' '-D__INT16_TYPE__=short int' '-D__INT_LEAST8_TYPE__=signed char' '-D__FLT16_MAX__=6.55040000000000000000000000000000000e+4F16' -D__FLT128_MIN__=3.36210314311209350626267781732175260e-4932F128 -D__SIZEOF_INT__=4 -D__DEC32_MAX_EXP__=97 -D__INT_FAST8_MAX__=0x7f '-D__FLT128_MAX__=1.18973149535723176508575932662800702e+4932F128' -D__INTPTR_MAX__=0x7fffffffffffffffL -Dlinux=1 -D__FLT64_HAS_QUIET_NAN__=1 '-D__FLT32_MIN_10_EXP__=(-37)' -D__FLT32X_DIG__=15 '-D__UINT16_C(c)=c' -D__PTRDIFF_WIDTH__=64 -D__LDBL_MANT_DIG__=64 -D__INT_FAST16_WIDTH__=64 -D__FLT64_HAS_INFINITY__=1 '-D__FLT64X_MAX__=1.18973149535723176502126385303097021e+4932F64x' -D__FLT16_HAS_INFINITY__=1 '-D__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)' -D__code_model_small__=1 -D__GCC_ATOMIC_LONG_LOCK_FREE=2 -D__DEC32_MANT_DIG__=7 -D__FLT16_MANT_DIG__=11 -D__k8__=1 '-D__INTPTR_TYPE__=long int' '-D__UINT16_TYPE__=short unsigned int' -D__WCHAR_TYPE__=int -D__pic__=2 -D__UINTPTR_MAX__=0xffffffffffffffffUL -D__INT_FAST64_WIDTH__=64 -D__LDBL_HAS_INFINITY__=1 -D__INT_FAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1 '-D__FLT_NORM_MAX__=3.40282346638528859811704183484516925e+38F' -D__FLT64X_MAX_EXP__=16384 '-D__UINT_FAST64_TYPE__=long unsigned int' '-D__BFLT16_MIN_EXP__=(-125)' -D__INT_MAX__=0x7fffffff -D__linux__=1 '-D__INT64_TYPE__=long int' -D__FLT_MAX_EXP__=128 -D__ORDER_BIG_ENDIAN__=4321 -D__DBL_MANT_DIG__=53 -D__SIZEOF_FLOAT128__=16 -D__BFLT16_MANT_DIG__=8 -D__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__DEC64_MIN__=1E-383DD '-D__WINT_TYPE__=unsigned int' '-D__UINT_LEAST32_TYPE__=unsigned int' -D__SIZEOF_SHORT__=2 '-D__FLT32_NORM_MAX__=3.40282346638528859811704183484516925e+38F32' -D__SSE__=1 '-D__LDBL_MIN_EXP__=(-16381)' '-D__FLT64_MAX__=1.79769313486231570814527423731704357e+308F64' -D__amd64__=1 -D__WINT_WIDTH__=32 -D__INT_LEAST8_MAX__=0x7f -D__INT_LEAST64_WIDTH__=64 -D__FLT32X_MAX_10_EXP__=308 -D__SIZEOF_INT128__=16 -D__FLT16_MIN__=6.10351562500000000000000000000000000e-5F16 -D__FLT64X_IS_IEC_60559__=1 -D__LDBL_MAX_10_EXP__=4932 -D__ATOMIC_RELAXED=0 '-D__DBL_EPSILON__=((double)2.22044604925031308084726333618164062e-16L)' -D__INT_LEAST32_TYPE__=int -D_LP64=1 '-D__UINT8_C(c)=c' -D__FLT64_MAX_EXP__=1024 -D__SIZEOF_WCHAR_T__=4 '-D__UINT64_TYPE__=long unsigned int' '-D__FLT128_NORM_MAX__=1.18973149535723176508575932662800702e+4932F128' '-D__FLT64_NORM_MAX__=1.79769313486231570814527423731704357e+308F64' -D__FLT128_HAS_QUIET_NAN__=1 -D__INTMAX_MAX__=0x7fffffffffffffffL '-D__INT_FAST8_TYPE__=signed char' -D__FLT64X_MIN__=3.36210314311209350626267781732175260e-4932F64x -D__FLT64_HAS_DENORM__=1 -D__FLT32_EPSILON__=1.19209289550781250000000000000000000e-7F32 -D__FLT16_HAS_DENORM__=1 -D__DBL_DECIMAL_DIG__=17 -D__STDC_UTF_32__=1 -D__INT_FAST8_WIDTH__=8 -D__FXSR__=1 '-D__FLT32X_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__DBL_NORM_MAX__=((double)1.79769313486231570814527423731704357e+308L)' -D__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__GCC_DESTRUCTIVE_SIZE=64 -D__INTMAX_WIDTH__=64 -D__FLT32_DIG__=6 '-D__UINT32_C(c)=c ## U' -D__FLT_DENORM_MIN__=1.40129846432481707092372958328991613e-45F -D__INT8_MAX__=0x7f -D__LONG_WIDTH__=64 '-D__DBL_MIN__=((double)2.22507385850720138309023271733240406e-308L)' -D__PIC__=2 -D__INT32_MAX__=0x7fffffff '-D__UINT_FAST32_TYPE__=long unsigned int' '-D__FLT32X_NORM_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__FLT_MAX__=3.40282346638528859811704183484516925e+38F' -D__SSE2__=1 -D__INT32_TYPE__=int -D__SIZEOF_DOUBLE__=8 '-D__FLT_MIN_10_EXP__=(-37)' -D__FLT64_MIN__=2.22507385850720138309023271733240406e-308F64 -D__INT_LEAST32_WIDTH__=32 '-D__INTMAX_TYPE__=long int' -D__FLT32X_HAS_QUIET_NAN__=1 -D__ATOMIC_CONSUME=1 -D__UINTMAX_MAX__=0xffffffffffffffffUL -D__PIE__=2 -D__FLT32X_DENORM_MIN__=4.94065645841246544176568792868221372e-324F32x -D__DBL_MAX_10_EXP__=308 -D__LDBL_DENORM_MIN__=3.64519953188247460252840593361941982e-4951L '-D__INT16_C(c)=c' '-D__PTRDIFF_TYPE__=long int' '-D__FLT32X_MIN_10_EXP__=(-307)' '-D__UINTPTR_TYPE__=long unsigned int' -D__DEC64_SUBNORMAL_MIN__=0.000000000000001E-383DD -D__DEC128_MANT_DIG__=34 '-D__LDBL_MIN_10_EXP__=(-4931)' -D__SIZEOF_LONG_LONG__=8 -D__FLT128_DECIMAL_DIG__=36 -D__GCC_ATOMIC_LLONG_LOCK_FREE=2 -D__FLT32_HAS_QUIET_NAN__=1 -D__FLT_DECIMAL_DIG__=9 -D__UINT_FAST16_MAX__=0xffffffffffffffffUL '-D__LDBL_NORM_MAX__=1.18973149535723176502126385303097021e+4932L' -D__GCC_ATOMIC_SHORT_LOCK_FREE=2 -D__SIZE_MAX__=0xffffffffffffffffUL '-D__UINT_FAST8_TYPE__=unsigned char' -D__ATOMIC_ACQ_REL=4 -D__ATOMIC_RELEASE=3 -I/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed -I/usr/include -- book_writer.c
+[E 18:26:03 47453] CODEQL_EXTRACTOR_CPP_TRAP_CACHING is not set
+[E 18:26:03 47453] CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_WRITE is not set
+[E 18:26:03 47453] CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_DIR is not set
+[E 18:26:03 47453] Initialising TRAP cache at path: 46/63f1/f187a84c5ca9db6e19777a98b851
+[E 18:26:03 47453] Not using TRAP cache
+[E 18:26:03 47453] TRAP cache miss
+[E 18:26:03 47453] Starting compilation TRAP /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/trap/cpp/compilations/39/4849877_0.trap.zst
+Catastrophic error: cannot open source file "book_writer.c"
+
+[E 18:26:03 47453] Warning[extractor-c++]: In construct_text_message: Catastrophic error: cannot open source file "book_writer.c"
+
+
+1 catastrophic error detected in the compilation of "book_writer.c".
+Compilation terminated.
+Current directory: /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy
+Command: /opt/reverse/codeql/cpp/tools/linux64/extractor --mimic /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet book_writer.c -quiet -dumpdir a- -dumpbase book_writer.c -dumpbase-ext .c -mtune=generic -march=x86-64 -o /tmp/ccVGm8wV.s
+[E 18:26:03 47453] Finished compilation TRAP /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/trap/cpp/compilations/39/4849877_0.trap.zst
+[E 18:26:03 47453] Marking C compilation as happened.
+[E 18:26:03 47453] Setting tag c-compilation-happened
+[E 18:26:03 47453] Starting from CODEQL_TRACER_DB_ID 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47453] Set tag for 000000000000B95B_0000000000000001
+[E 18:26:03 47453] Set tag for 000000000000B957_0000000000000003
+[E 18:26:03 47453] Set tag for 000000000000B957_0000000000000002
+[E 18:26:03 47453] Set tag for root
+[E 18:26:03 47453] Unlocking DB
+[E 18:26:03 47453] Unlocked DB
+[E 18:26:03 47453] Warning[extractor-c++]: In main: Extractor exiting with code 1
+[T 16:26:03 47451] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 1.
+[T 16:26:03 47493] Attempting to switch stdout/stderr to 4...
+[T 16:26:03 47493] Initializing tracer.
+[T 16:26:03 47493] Initializing tags.
+[T 16:26:03 47493] ID set to 000000000000B985_0000000000000001 (parent 000000000000B957_0000000000000003)
+[E 18:26:03 47493] CodeQL C/C++ Extractor 2.17.0
+[E 18:26:03 47493] Current directory: /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy
+[E 18:26:03 47493] Command: /opt/reverse/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/gcc book_writer.c
+Warning: Could not open file '/home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/compiler_mimic_cache/dbba538442f4'
+Warning: Could not open file '/home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/compiler_mimic_cache/896c4a39dbc9'
+[T 16:26:03 47494] Initializing tracer.
+[T 16:26:03 47494] Initializing tags.
+[T 16:26:03 47494] ID set to 000000000000B986_0000000000000001 (parent 000000000000B985_0000000000000001)
+[T 16:26:03 47494] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47494] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47494] Executing the following tracer actions:
+[T 16:26:03 47494] Tracer actions:
+[T 16:26:03 47494] pre_invocations(0)
+[T 16:26:03 47494] post_invocations(1)
+[T 16:26:03 47494] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, --version]
+[T 16:26:03 47494] trace_languages(1): [cpp]
+[T 16:26:03 47496] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47496] Initializing tracer.
+[T 16:26:03 47496] Initializing tags.
+[T 16:26:03 47496] ID set to 000000000000B988_0000000000000001 (parent 000000000000B986_0000000000000001)
+[E 18:26:03 47496] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47496] Extractor exited successfully
+[T 16:26:03 47494] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47497] Initializing tracer.
+[T 16:26:03 47497] Initializing tags.
+[T 16:26:03 47497] ID set to 000000000000B989_0000000000000001 (parent 000000000000B985_0000000000000001)
+[T 16:26:03 47497] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47497] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47497] Executing the following tracer actions:
+[T 16:26:03 47497] Tracer actions:
+[T 16:26:03 47497] pre_invocations(0)
+[T 16:26:03 47497] post_invocations(1)
+[T 16:26:03 47497] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, --help]
+[T 16:26:03 47497] trace_languages(1): [cpp]
+[T 16:26:03 47499] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47499] Initializing tracer.
+[T 16:26:03 47499] Initializing tags.
+[T 16:26:03 47499] ID set to 000000000000B98B_0000000000000001 (parent 000000000000B989_0000000000000001)
+[E 18:26:03 47499] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47499] Extractor exited successfully
+[T 16:26:03 47497] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47500] Initializing tracer.
+[T 16:26:03 47500] Initializing tags.
+[T 16:26:03 47500] ID set to 000000000000B98C_0000000000000001 (parent 000000000000B985_0000000000000001)
+[T 16:26:03 47500] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47500] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47500] Executing the following tracer actions:
+[T 16:26:03 47500] Tracer actions:
+[T 16:26:03 47500] pre_invocations(0)
+[T 16:26:03 47500] post_invocations(1)
+[T 16:26:03 47500] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, -nostdinc, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_2_47493_555898.o, -c, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_1_47493_555839.c]
+[T 16:26:03 47500] trace_languages(1): [cpp]
+[T 16:26:03 47502] Initializing tracer.
+[T 16:26:03 47502] Initializing tags.
+[T 16:26:03 47502] ID set to 000000000000B98E_0000000000000001 (parent 000000000000B98C_0000000000000001)
+[T 16:26:03 47502] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47502] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47502] Executing the following tracer actions:
+[T 16:26:03 47502] Tracer actions:
+[T 16:26:03 47502] pre_invocations(0)
+[T 16:26:03 47502] post_invocations(1)
+[T 16:26:03 47502] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -quiet, -nostdinc, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_1_47493_555839.c, -quiet, -dumpdir, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//, -dumpbase, semmle_2_47493_555898.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -o, /tmp/ccqut7KV.s]
+[T 16:26:03 47502] trace_languages(1): [cpp]
+[T 16:26:03 47504] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47504] Initializing tracer.
+[T 16:26:03 47504] Initializing tags.
+[T 16:26:03 47504] ID set to 000000000000B990_0000000000000001 (parent 000000000000B98E_0000000000000001)
+[E 18:26:03 47504] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47504] Extractor exited successfully
+[T 16:26:03 47502] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47505] Initializing tracer.
+[T 16:26:03 47505] Initializing tags.
+[T 16:26:03 47505] ID set to 000000000000B991_0000000000000001 (parent 000000000000B98C_0000000000000001)
+[T 16:26:03 47505] ==== Candidate to intercept: as (canonical: /usr/bin/as) ====
+[T 16:26:03 47505] Lua: === Intercepted call to /usr/bin/as ===
+[T 16:26:03 47505] Executing the following tracer actions:
+[T 16:26:03 47505] Tracer actions:
+[T 16:26:03 47505] pre_invocations(0)
+[T 16:26:03 47505] post_invocations(1)
+[T 16:26:03 47505] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_2_47493_555898.o, /tmp/ccqut7KV.s]
+[T 16:26:03 47505] trace_languages(1): [cpp]
+[T 16:26:03 47508] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47508] Initializing tracer.
+[T 16:26:03 47508] Initializing tags.
+[T 16:26:03 47508] ID set to 000000000000B994_0000000000000001 (parent 000000000000B991_0000000000000001)
+[E 18:26:03 47508] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47508] Extractor exited successfully
+[T 16:26:03 47505] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47514] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47514] Initializing tracer.
+[T 16:26:03 47514] Initializing tags.
+[T 16:26:03 47514] ID set to 000000000000B99A_0000000000000001 (parent 000000000000B98C_0000000000000001)
+[E 18:26:03 47514] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47514] Extractor exited successfully
+[T 16:26:03 47500] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47515] Initializing tracer.
+[T 16:26:03 47515] Initializing tags.
+[T 16:26:03 47515] ID set to 000000000000B99B_0000000000000001 (parent 000000000000B985_0000000000000001)
+[T 16:26:03 47515] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47515] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47515] Executing the following tracer actions:
+[T 16:26:03 47515] Tracer actions:
+[T 16:26:03 47515] pre_invocations(0)
+[T 16:26:03 47515] post_invocations(1)
+[T 16:26:03 47515] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, -nostdinc, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_2_47493_555898.o, -c, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_1_47493_555839.c, -v, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35]
+[T 16:26:03 47515] trace_languages(1): [cpp]
+[T 16:26:03 47521] Initializing tracer.
+[T 16:26:03 47521] Initializing tags.
+[T 16:26:03 47521] ID set to 000000000000B9A1_0000000000000001 (parent 000000000000B99B_0000000000000001)
+[T 16:26:03 47521] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47521] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47521] Executing the following tracer actions:
+[T 16:26:03 47521] Tracer actions:
+[T 16:26:03 47521] pre_invocations(0)
+[T 16:26:03 47521] post_invocations(1)
+[T 16:26:03 47521] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -quiet, -nostdinc, -v, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_1_47493_555839.c, -quiet, -dumpdir, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//, -dumpbase, semmle_2_47493_555898.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -version, -o, /tmp/ccTiWFGU.s]
+[T 16:26:03 47521] trace_languages(1): [cpp]
+[T 16:26:03 47523] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47523] Initializing tracer.
+[T 16:26:03 47523] Initializing tags.
+[T 16:26:03 47523] ID set to 000000000000B9A3_0000000000000001 (parent 000000000000B9A1_0000000000000001)
+[E 18:26:03 47523] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47523] Extractor exited successfully
+[T 16:26:03 47521] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47524] Initializing tracer.
+[T 16:26:03 47524] Initializing tags.
+[T 16:26:03 47524] ID set to 000000000000B9A4_0000000000000001 (parent 000000000000B99B_0000000000000001)
+[T 16:26:03 47524] ==== Candidate to intercept: as (canonical: /usr/bin/as) ====
+[T 16:26:03 47524] Lua: === Intercepted call to /usr/bin/as ===
+[T 16:26:03 47524] Executing the following tracer actions:
+[T 16:26:03 47524] Tracer actions:
+[T 16:26:03 47524] pre_invocations(0)
+[T 16:26:03 47524] post_invocations(1)
+[T 16:26:03 47524] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, -v, --64, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_2_47493_555898.o, /tmp/ccTiWFGU.s]
+[T 16:26:03 47524] trace_languages(1): [cpp]
+[T 16:26:03 47526] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47526] Initializing tracer.
+[T 16:26:03 47526] Initializing tags.
+[T 16:26:03 47526] ID set to 000000000000B9A6_0000000000000001 (parent 000000000000B9A4_0000000000000001)
+[E 18:26:03 47526] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47526] Extractor exited successfully
+[T 16:26:03 47524] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47527] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47527] Initializing tracer.
+[T 16:26:03 47527] Initializing tags.
+[T 16:26:03 47527] ID set to 000000000000B9A7_0000000000000001 (parent 000000000000B99B_0000000000000001)
+[E 18:26:03 47527] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47527] Extractor exited successfully
+[T 16:26:03 47515] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47528] Initializing tracer.
+[T 16:26:03 47528] Initializing tags.
+[T 16:26:03 47528] ID set to 000000000000B9A8_0000000000000001 (parent 000000000000B985_0000000000000001)
+[T 16:26:03 47528] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/gcc) ====
+[T 16:26:03 47528] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 16:26:03 47528] Executing the following tracer actions:
+[T 16:26:03 47528] Tracer actions:
+[T 16:26:03 47528] pre_invocations(0)
+[T 16:26:03 47528] post_invocations(1)
+[T 16:26:03 47528] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, -nostdinc, -o, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_4_47493_707269.o, -c, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_3_47493_707189.c]
+[T 16:26:03 47528] trace_languages(1): [cpp]
+[T 16:26:03 47530] Initializing tracer.
+[T 16:26:03 47530] Initializing tags.
+[T 16:26:03 47530] ID set to 000000000000B9AA_0000000000000001 (parent 000000000000B9A8_0000000000000001)
+[T 16:26:03 47530] ==== Candidate to intercept: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 (canonical: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1) ====
+[T 16:26:03 47530] Lua: === Intercepted call to /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 ===
+[T 16:26:03 47530] Executing the following tracer actions:
+[T 16:26:03 47530] Tracer actions:
+[T 16:26:03 47530] pre_invocations(0)
+[T 16:26:03 47530] post_invocations(1)
+[T 16:26:03 47530] invocation: /opt/reverse/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1, -quiet, -nostdinc, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//semmle_3_47493_707189.c, -quiet, -dumpdir, /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tmp//, -dumpbase, semmle_4_47493_707269.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -o, /tmp/ccY3CZPc.s]
+[T 16:26:03 47530] trace_languages(1): [cpp]
+[T 16:26:03 47532] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47532] Initializing tracer.
+[T 16:26:03 47532] Initializing tags.
+[T 16:26:03 47532] ID set to 000000000000B9AC_0000000000000001 (parent 000000000000B9AA_0000000000000001)
+[E 18:26:03 47532] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47532] Extractor exited successfully
+[T 16:26:03 47530] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 16:26:03 47533] Attempting to switch stdout/stderr to 7...
+[T 16:26:03 47533] Initializing tracer.
+[T 16:26:03 47533] Initializing tags.
+[T 16:26:03 47533] ID set to 000000000000B9AD_0000000000000001 (parent 000000000000B9A8_0000000000000001)
+[E 18:26:03 47533] Mimicry classification suppression detected; exiting.
+[E 18:26:03 47533] Extractor exited successfully
+[T 16:26:03 47528] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 18:26:03 47493] Warning[extractor-c++]: In canonicalise_path: realpath failed
+[E 18:26:03 47493] Checking whether C compilation already happened.
+[E 18:26:03 47493] Checking for tag c-compilation-happened
+[E 18:26:03 47493] Checking CODEQL_TRACER_DB_ID 000000000000B957_0000000000000003
+[E 18:26:03 47493] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47493] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47493] Unlocking DB
+[E 18:26:03 47493] Unlocked DB
+[E 18:26:03 47493] Exiting as C compilation already happened.
+[T 16:26:03 47447] Extractor /opt/reverse/codeql/cpp/tools/linux64/extractor terminated with exit code 0.

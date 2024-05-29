@@ -1,0 +1,12 @@
+[E 18:26:03 47493] CodeQL C/C++ Extractor 2.17.0
+[E 18:26:03 47493] Current directory: /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy
+[E 18:26:03 47493] Command: /opt/reverse/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/gcc book_writer.c
+[E 18:26:03 47493] Warning[extractor-c++]: In canonicalise_path: realpath failed
+[E 18:26:03 47493] Checking whether C compilation already happened.
+[E 18:26:03 47493] Checking for tag c-compilation-happened
+[E 18:26:03 47493] Checking CODEQL_TRACER_DB_ID 000000000000B957_0000000000000003
+[E 18:26:03 47493] Locking DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47493] Locked DB /home/ego/Secu/FCSC_2024/Pwn/book_writer_easy/cpp-database/working/tags.db
+[E 18:26:03 47493] Unlocking DB
+[E 18:26:03 47493] Unlocked DB
+[E 18:26:03 47493] Exiting as C compilation already happened.
